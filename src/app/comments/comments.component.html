@@ -1,0 +1,52 @@
+<app-header></app-header>
+<app-aside></app-aside>
+<div class="users-section">
+    <div class="users-main">
+        <div class="users-top">
+            <div class="users-top-left">
+                <div class="data-title">
+                    <h3>Order catalogue</h3>
+                </div>
+                <div class="new-items">
+                    <button>New Items</button>
+                </div>
+            </div>
+            <div class="users-top-right">
+                <div class="select">
+                    <input type="text" [placeholder]="placeholderSelect">
+                    <!-- <img [src]="selectIcon"> -->
+                </div>
+                <div class="search">
+                    <input type="search" name="search" id="search" [placeholder]="searchPlc">
+                    <img [src]="searchIcon">
+                </div>
+                <div class="decoration">
+                    <img [src]="decoreIcon">
+                </div>
+                <div class="add-btn">
+                    <button>Add new</button>
+                </div>
+            </div>
+        </div>
+        <div class="users-middle">
+            <ul>
+                <li><p>#</p></li>
+                <li><p style="width: 100px;">Name</p></li>
+                <li style="margin-left: 91px;"><p style="width: 120px;">Email</p></li>
+                <li style="margin-left: 113px;"><p>Body</p></li>
+                <li style="margin-left: 380px;"><p>Action</p></li>
+            </ul>
+        </div>
+        <div class="users-data">
+            <div class="data-container">
+                <ul *ngFor="let user of commentInfos">
+                    <li><p>{{user.id}}</p></li>
+                    <li><p style="width: 100px;">{{user.name}}</p></li>
+                    <li><p style="width: 120px">{{user.email}}</p></li>
+                    <li><p>{{user.body}}</p></li>
+                    <li><p>Edit</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

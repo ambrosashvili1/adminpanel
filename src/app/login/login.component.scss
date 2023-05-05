@@ -1,0 +1,48 @@
+.login-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+        width: 500px;
+        height: auto;
+        padding: 50px 100px;
+        background-color: #220646;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        color: #fff;
+        .sbmt {
+            width: 100%;
+            height: auto;
+            font-size: 16px;
+            padding: 8px 20px;
+            background-color: #59279a;
+            color: #fff;
+            cursor: pointer;
+            :hover {
+                background-color: #311556;
+            }
+            :active {
+                opacity: 0.8;
+            }
+        }
+        input {
+            width: 100%;
+            height: auto;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        .decore {
+            width: 100%;
+            height: 2px;
+            background-color: #59279a;
+            margin: 20px;
+            margin-left: -2px;
+        }
+    }
+}

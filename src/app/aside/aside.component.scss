@@ -1,0 +1,79 @@
+.aside-main {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #220646;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    .aside-top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 10px;
+        padding: 40px 10px 20px 10px;
+        .logo {
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .company-name {
+            color: #fff;
+            font-size: 16px;
+            line-height: 18.75px;
+            font-weight: 700;
+        }
+    }
+    .aside-links {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 50px;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-style: normal;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .aside-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #15012E;
+        button {
+            width: 50px;
+            height: 19px;
+            font-size: 16px;
+            color: #fff;
+            line-height: 19px;
+            font-weight: 400;
+            font-style: normal;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}

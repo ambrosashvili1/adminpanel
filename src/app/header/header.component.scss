@@ -1,0 +1,101 @@
+.header-main {
+    width: 100%;
+    height: auto;
+    padding: 20px 40px 20px 280px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .header-left {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 30px;
+        .left-name {
+            h3 {
+                font-size: 16px;
+                color: #A0AEC0;
+                font-weight: 400;
+                line-height: 19px;
+            }
+        }
+        .for-search {
+            input {
+                width: 228px;
+                height: 40px;
+                color: #222;
+                border: 1px solid #E2E8F0;
+                border-radius: 4px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                outline: none;
+                padding: 5px 10px;
+                ::placeholder {
+                    color: #E2E8F0;
+                }
+            }
+        }
+    }
+    .header-right {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 30px;
+        .right-links {
+            ul {
+                display: flex;
+                flex-direction: row;
+                column-gap: 30px;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #4A5568;
+                        line-height: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .right-btn {
+            .btn {
+                width: 101px;
+                height: 30px;
+                background: #6B46C1;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 14px;
+                border: none;
+                outline: none;
+                color: #E2E8F0;
+                cursor: pointer;
+            }
+        }
+        .right-img {
+            width: 50px;
+            position: relative;
+            height: auto;
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            span {
+                position: absolute;
+                bottom: 3px;
+                right: 4px;
+                background-color: #68D391;
+                width: 12px;
+                height: 12px;
+                border-radius: 6px;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
